@@ -25,7 +25,7 @@ public class UniqueEmailAddresses {
             int ix = email.indexOf('@');
             address = email.substring(0, ix);
             domain = email.substring(ix + 1);
-            address = address.replace(".", "");
+            address = address.replace("", "");
 
             if (address.contains("+"))
                 address = address.substring(0, address.indexOf('+'));
